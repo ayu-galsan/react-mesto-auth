@@ -55,6 +55,8 @@ function App() {
     })
     .catch((err) => {
       console.log(err);
+      setIsRegister(false);
+      addRegisterPopup();
     })
   }
 
@@ -62,12 +64,9 @@ function App() {
 function handleRegister(email, password) {
   auth.register(email, password)
     .then((res) => {
-      console.log(res)
       if (res.data._id) {
         setEmail(res.data.email);
         addRegisterPopup();
-        handleLogin(email, password);
-       // setLoggedIn(true);
         setIsRegister(true);
         history.replace({pathname: "/sign-in"});
       } 
