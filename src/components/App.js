@@ -27,6 +27,7 @@ function App() {
   const [cards, setCards] = useState([]);
   const [renderLoading, setRenderLoading] = useState('Сохранить');
   const [loggedIn, setLoggedIn] = useState(false);
+  const [isRegister, setIsRegister] = useState(null);
   const [email, setEmail] = useState(''); 
   const history = useHistory();
 
@@ -66,12 +67,14 @@ function handleRegister(email, password) {
         setEmail(res.data.email);
         addRegisterPopup();
         handleLogin(email, password);
-        setLoggedIn(true);
+       // setLoggedIn(true);
+        setIsRegister(true);
         history.replace({pathname: "/sign-in"});
       } 
     })
     .catch((err) => {
       console.log(err);
+      setIsRegister(false);
       addRegisterPopup();
     })
 }
@@ -232,7 +235,7 @@ function signOut() {
         <InfoRegisterPopup 
           isOpen = {isAddInfoRegisterPopup}
           onClose = {closeAllPopups}
-          islogged ={loggedIn}
+          isRegister ={isRegister}
           title ={'Вы успешно зарегистрировались!'}
           error={'Что-то пошло не так!Попробуйте ещё раз.'}
         />

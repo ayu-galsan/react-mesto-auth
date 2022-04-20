@@ -1,4 +1,4 @@
-function InfoRegisterPopup({isOpen, onClose, islogged, title, error}) {
+function InfoRegisterPopup({isOpen, onClose, isRegister, title, error}) {
 return (
   <div className={`popup ${isOpen && "popup_opened"}`}>
     <div className="popup__container">
@@ -7,8 +7,8 @@ return (
         onClick={onClose}
         type="button"
       ></button>
-      <img className={islogged ? "popup__register-image" : "popup__register-image_error"} />
-      <h2 className="popup__register-heading">{islogged ? title : error}</h2>
+      <img className={isRegister ? "popup__register-image" : "popup__register-image_error"} />
+      <h2 className="popup__register-heading">{isRegister ? title : error}</h2>
   </div>
     </div>
 )
