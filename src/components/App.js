@@ -63,16 +63,16 @@ function handleRegister(email, password) {
     .then((res) => {
       console.log(res)
       if (res.data._id) {
-        setToken(res.token);
         setEmail(res.data.email);
-        handleAddInfoRegister();
+        addRegisterPopup();
+        handleLogin(email, password);
         setLoggedIn(true);
         history.replace({pathname: "/sign-in"});
       } 
     })
     .catch((err) => {
       console.log(err);
-      handleAddInfoRegister();
+      addRegisterPopup();
     })
 }
 
@@ -132,7 +132,7 @@ function signOut() {
     setIsEditAvatarPopupOpen(true);
   }
 
-  function handleAddInfoRegister() {
+  function addRegisterPopup() {
     setIsAddInfoRegisterPopup(true)
   }
 
