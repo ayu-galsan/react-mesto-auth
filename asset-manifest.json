@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8eff6fd0.css",
+    "main.js": "/static/js/main.33b6412f.js",
+    "static/js/787.5530211c.chunk.js": "/static/js/787.5530211c.chunk.js",
+    "static/media/Inter-Medium.ttf": "/static/media/Inter-Medium.9cbff87dc577185b8630.ttf",
+    "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.96ce55e3ba0d6a209090.ttf",
+    "static/media/Inter-Black.ttf": "/static/media/Inter-Black.538f70c4e7b7553747a2.ttf",
+    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.7ddb89dcdb33dd761944.woff",
+    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.34ed58565339f4f3be40.woff",
+    "static/media/Inter-Black.woff": "/static/media/Inter-Black.9e6e11b6bd30d48fb18f.woff",
+    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.6db7e439cc4b0e5c0cd2.woff2",
+    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.4c96ed73beaf6d1e6cc7.woff2",
+    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.88ad83dbf900fdf3a659.woff2",
+    "static/media/logo.svg": "/static/media/logo.1cc8b606dcd0452f89503eccb94764ef.svg",
+    "index.html": "/index.html",
+    "static/media/element__like-black.svg": "/static/media/element__like-black.35948469632d0421d697.svg",
+    "static/media/element__like.svg": "/static/media/element__like.cda51c5bede1cea78ee7.svg",
+    "static/media/Close__Icon.svg": "/static/media/Close__Icon.039f1f5203f653b4bacd.svg",
+    "static/media/Add_Button.svg": "/static/media/Add_Button.bed8c136e13907f5eefb.svg",
+    "static/media/Edit__Button.svg": "/static/media/Edit__Button.f384b2643a24e3565f00.svg",
+    "static/media/Delete__Button.svg": "/static/media/Delete__Button.8f5367f8701348128c00.svg",
+    "main.8eff6fd0.css.map": "/static/css/main.8eff6fd0.css.map",
+    "main.33b6412f.js.map": "/static/js/main.33b6412f.js.map",
+    "787.5530211c.chunk.js.map": "/static/js/787.5530211c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8eff6fd0.css",
+    "static/js/main.33b6412f.js"
+  ]
+}
