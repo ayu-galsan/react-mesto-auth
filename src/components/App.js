@@ -49,6 +49,7 @@ function App() {
   function handleLogin(email, password) {
     auth.authorize(email, password)
     .then((res) => {
+      setEmail(email);
       setToken(res.token);
       setLoggedIn(true);
       history.push("/home");
@@ -91,9 +92,8 @@ function signOut() {
     if(token) {
       auth.getContent(token)
         .then(res => {
-          console.log(res)
-          if(res && res.email) {
-             setEmail(res.email);
+          if(res && res.data) {
+             setEmail(res.data.email);
              setLoggedIn(true);
              history.push("/home");
            } 
